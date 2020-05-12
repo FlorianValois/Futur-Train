@@ -9,10 +9,7 @@ var uglify       = require('gulp-uglify');
 var concat       = require('gulp-concat');
   
 gulp.task('style', function () {
-  return gulp.src([
-    'node_modules/bootstrap/scss/bootstrap.scss',
-    'assets/scss/style.scss'
-  ])
+  return gulp.src('assets/scss/style.scss')
 	.pipe(sourcemaps.init())
 	.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
 	.pipe(sourcemaps.write(''))
