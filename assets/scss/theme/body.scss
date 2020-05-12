@@ -21,12 +21,14 @@ body {
 }
 
 a {
+  cursor: pointer;
   text-decoration: none !important;
 }
 
 p {
   font-size: 1.5em;
   margin-bottom: 30px;
+  color: $grey;
 
   //	@include media-breakpoint-up(lg) {
   //		font-size: 2em;

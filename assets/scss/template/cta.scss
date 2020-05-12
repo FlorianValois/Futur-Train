@@ -1,0 +1,52 @@
+.cta {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 60px;
+  border-radius: 0;
+  overflow: hidden;
+  transition: all ease .3s;
+
+  &:before {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    content: "";
+    display: block;
+    opacity: .2;
+    background: url('/img/triangle/triangle.svg');
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+  }
+  
+  &-primary {
+    background: linear-gradient(-90deg, $color-primary 0%, $color-secondary 100%);
+
+    span {
+      color: $white;
+    }
+  }
+
+  span {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all ease .3s;
+  }
+
+  &:hover {
+    border-radius: 30px;
+    transition: all ease .3s;
+
+    span {
+      letter-spacing: 0;
+      transition: all ease .3s;
+    }
+  }
+}

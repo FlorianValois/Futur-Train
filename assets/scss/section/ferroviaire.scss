@@ -1,0 +1,92 @@
+#ferroviaire {
+  position: relative;
+  background: rgba($color-primary, .05);
+  padding: 50px 0;
+
+  &:before {
+    position: absolute;
+    z-index: 1;
+    top: -60px;
+    left: 0;
+    content: "";
+    display: block;
+    background: rgba($color-primary, .05);
+    width: 100%;
+    height: 60px;
+  }
+
+  &:after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "";
+    display: block;
+    background: url('/img/triangle/triangle.svg');
+    width: 75%;
+    height: 200px;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+  }
+  
+  > div{
+    position: relative;
+    z-index: 2;
+  }
+
+  .ferroviaire-chiffre {
+    position: relative;
+    z-index: 20;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 220px;
+    }
+
+    &:nth-child(1) {
+      @include media-breakpoint-up(lg) {
+        margin: 0 auto;
+      }
+    }
+
+    &:nth-child(2) {}
+
+    &:nth-child(3) {
+      @include media-breakpoint-up(lg) {
+        position: absolute;
+        bottom: -70px;
+        right: 0;
+      }
+    }
+
+    span {
+      background: -webkit-linear-gradient(180deg, $color-primary 0%, $color-secondary 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 5em;
+      font-weight: 800;
+    }
+
+    div {
+      position: relative;
+      padding-left: 15px;
+
+      &:before {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 3px;
+        height: calc(100% - 10px);
+        background: red;
+        border-radius: 3px;
+      }
+
+      h3 {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
