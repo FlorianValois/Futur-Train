@@ -20,7 +20,7 @@ gulp.task('style', function () {
 		basename: "style",
 		suffix: '.min'
 	}))
-	.pipe(gulp.dest('./'));
+	.pipe(gulp.dest('./public/'));
 });
 
 gulp.task('script', function() {
@@ -33,7 +33,7 @@ gulp.task('script', function() {
 	)
 //	.pipe(uglify())
 	.pipe(concat('script.min.js'))
-	.pipe(gulp.dest('./'))
+	.pipe(gulp.dest('./public/'))
 });
  
 gulp.task('default', async function () {
