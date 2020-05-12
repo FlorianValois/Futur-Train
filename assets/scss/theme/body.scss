@@ -1,0 +1,39 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 10px;
+  color: $black;
+//  padding-top: 50px;
+//
+//  @include media-breakpoint-up(md) {
+//    padding-top: 70px;
+//  }
+//
+//  @include media-breakpoint-up(lg) {
+//    padding-top: 90px;
+//  }
+}
+
+a {
+  text-decoration: none !important;
+}
+
+p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+
+  //	@include media-breakpoint-up(lg) {
+  //		font-size: 2em;
+  //		margin-bottom: 50px;
+  //	}
+}
+
+strong {
+  font-weight: 600;
+}
