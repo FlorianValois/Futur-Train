@@ -50,6 +50,24 @@
   <h1>Le développement et la formation des métiers du ferroviaire</h1>
   
 </header>
+ 
+<section id="selector-statut" class="container">
+  
+  <div id="selector-statut-choice">
+    <span>Je suis <strong>Etudiant</strong></span>
+  </div>
+  
+  <div id="selector-statut-list-choice">
+    <ul>
+      <li data-link="etudiant">Etudiant</li>
+      <li data-link="interimaire">Intérimaire</li>
+      <li data-link="salarie">Salarié</li>
+    </ul>
+  </div>
+  
+  <a href="#" id="link-selector-statut"><span>Découvrir</span></a>
+  
+</section>
   
 
 
