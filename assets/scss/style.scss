@@ -1,0 +1,13 @@
+// Base
+@import 'base/reset';
+
+//Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// Theme
+@import 'theme/var';
+@import 'theme/body';
+
+// Template
+@import 'template/header';
+@import 'template/footer';
