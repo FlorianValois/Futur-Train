@@ -1,0 +1,35 @@
+{
+  "name": "keliosis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlorianValois/keliosis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlorianValois/keliosis/issues"
+  },
+  "homepage": "https://github.com/FlorianValois/keliosis",
+  "devDependencies": {
+    "streamqueue": "latest",
+    "gulp": "latest",
+    "gulp-concat": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-csso": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "node-sass": "latest",
+    "gulp-uglify": "latest"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1"
+  }
+}
