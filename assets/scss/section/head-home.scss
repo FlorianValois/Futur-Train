@@ -1,0 +1,23 @@
+#head-home{
+  position: relative;
+    background: url('/assets/img/header/header-home.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+    h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: $white;
+    width: 80%;
+    font-weight: 800;
+    text-align: center;
+    font-size: 3em;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 5em;
+    }
+  }
+}
