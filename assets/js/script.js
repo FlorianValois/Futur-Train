@@ -3,14 +3,21 @@ $('.js-btn-main-menu').on('click', function () {
 });
 
 /* Effet sur scroll */
+
+var scroll = $(window).scrollTop();
+/* Background header */
+if (scroll >= 100) {
+  $("header").addClass("js-scroll-down");
+} else {
+  $("header").removeClass("js-scroll-down");
+}
+
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
   /* Background header */
   if (scroll >= 100) {
-    console.log('scroll');
     $("header").addClass("js-scroll-down");
   } else {
-    console.log('top scroll');
     $("header").removeClass("js-scroll-down");
   }
 });
@@ -26,4 +33,26 @@ $('#selector-statut-list-choice ul li').on('click', function () {
   $('#selector-statut-choice strong').text(choicetext);
   $('#link-selector-statut').attr('href', '/decouvrir-' + choicedatalink);
   $('#selector-statut-list-choice').removeClass('open');
+});
+
+/* Carousel "Métiers" */
+$(".owl-carousel").owlCarousel({
+  margin: 10,
+  nav: true,
+  navText: ['<img src="/assets/img/arrow/arrow-left-white.svg" alt="flèche gauche blanche" />','<img src="/assets/img/arrow/arrow-right-white.svg" alt="flèche droite blanche" />'],
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    480: {
+      items: 2
+    },
+    640: {
+      items: 3
+    },
+    990: {
+      items: 4
+    }
+  }
 });

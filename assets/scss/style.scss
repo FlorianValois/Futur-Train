@@ -14,5 +14,10 @@
 @import 'template/footer';
 @import 'template/cta';
 
+@import 'section/head-home';
 @import 'section/selector-statut';
 @import 'section/ferroviaire';
+@import 'section/metiers';
+
+// Plugin
+@import 'plugin/owl-carousel';

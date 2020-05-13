@@ -1,0 +1,27 @@
+.owl-nav {
+  position: absolute;
+  top: -40px;
+  right: 30px;
+
+  &:before {
+    position: absolute;
+    top: 9px;
+    right: 19px;
+    display: block;
+    content: "";
+    background: $white;
+    width: 15px;
+    height: 1px;
+    transform: rotate(-65deg);
+  }
+
+  button {
+    &.disabled {
+      opacity: .5;
+    }
+
+    &.owl-prev {
+      margin-right: 15px;
+    }
+  }
+}

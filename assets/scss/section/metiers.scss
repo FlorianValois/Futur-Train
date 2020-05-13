@@ -1,0 +1,106 @@
+#metiers {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    background: url('/assets/img/section/bg-gradient.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 500px;
+  }
+
+  > div {
+    position: relative;
+    z-index: 2;
+  }
+
+  #metiers-pres {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+
+    h2,
+    p {
+      color: $white;
+    }
+
+    a {
+      margin: 0 auto;
+    }
+  }
+
+  #metiers-carousel {
+    h3 {
+      color: $white;
+      margin-bottom: 30px;
+    }
+
+    #metiers-carousel-content {
+      width: 100%;
+      max-width: 1200px;
+
+      .metiers-carousel-post {
+        position: relative;
+
+        a {
+          position: relative;
+          display: block;
+
+          &:after {
+            position: absolute;
+            z-index: 1;
+            display: block;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(-90deg, $color-primary 0%, $color-secondary 100%);
+            opacity: 0;
+            visibility: hidden;
+            transition: all ease .3s;
+          }
+
+          &:hover {
+            &:after {
+              opacity: .75;
+              visibility: visible;
+              transition: all ease .3s;
+            }
+
+            .title {
+              bottom: 50%;
+              transform: translateY(50%);
+              transition: all ease .3s;
+            }
+          }
+        }
+
+        .title {
+          position: absolute;
+          z-index: 2;
+          bottom: 30px;
+          left: 30px;
+          font-size: 1.8em;
+          font-weight: 800;
+          color: $white;
+          width: 60%;
+          transition: all ease .3s;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
