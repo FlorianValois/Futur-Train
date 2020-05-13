@@ -87,7 +87,7 @@
     <div class="col-12 offset-lg-1 col-lg-6">
      
       <div class="ferroviaire-chiffre">
-        <span>98.2%</span>
+        <span><span class="count-dec">98.2</span>%</span>
         <div>
           <h3>Un emploi stable</h3>
           <p>Des salariés sont en contrat à durée inderterminée CDI.</p>
@@ -95,7 +95,7 @@
       </div>
       
       <div class="ferroviaire-chiffre">
-        <span>4294</span>
+        <span><span class="count">4294</span></span>
         <div>
           <h3>Vous former grâce à l'alternance</h3>
           <p>Des salariés sont en contrat à durée inderterminée CDI.</p>
@@ -103,7 +103,7 @@
       </div>
       
       <div class="ferroviaire-chiffre">
-        <span>98.2%</span>
+        <span><span class="count-dec">98.2</span>%</span>
         <div>
           <h3>Un emploi stable</h3>
           <p>Des salariés sont en contrat à durée inderterminée CDI.</p>
@@ -166,52 +166,17 @@
   
 </section>
  
- 
 <section id="formations">
   
-  <div class="container">
-    
-    <h2>Formations dans toute la France</h2>
-    
-    <p>Trouvez le centre de formation qui correspond à la zone géographique de votre choix.</p>
-    
-    <a href="#" class="cta cta-primary"><span>Localiser une formation</span></a>
-    
+  <div class="container d-flex align-items-center">
+    <div>
+      <h2>Formations dans toute la France</h2>
+      <p>Trouvez le centre de formation qui correspond à la zone géographique de votre choix.</p>
+      <a href="#" class="cta cta-primary"><span>Localiser une formation</span></a>
+    </div>
   </div>
   
-  
 </section>
-  
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <script src="/script.min.js" async></script>

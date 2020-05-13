@@ -39,7 +39,7 @@ $('#selector-statut-list-choice ul li').on('click', function () {
 $(".owl-carousel").owlCarousel({
   margin: 10,
   nav: true,
-  navText: ['<img src="/assets/img/arrow/arrow-left-white.svg" alt="flèche gauche blanche" />','<img src="/assets/img/arrow/arrow-right-white.svg" alt="flèche droite blanche" />'],
+  navText: ['<img src="/assets/img/arrow/arrow-left-white.svg" alt="flèche gauche blanche" />', '<img src="/assets/img/arrow/arrow-right-white.svg" alt="flèche droite blanche" />'],
   responsiveClass: true,
   responsive: {
     0: {
@@ -55,4 +55,32 @@ $(".owl-carousel").owlCarousel({
       items: 4
     }
   }
+});
+
+/* Count to 0 at xx */
+$('#ferroviaire').appear();
+
+$(document.body).on('appear', '#ferroviaire', function () {
+  $('.count').each(function () {
+    $(this).prop('Counter', 0).animate({
+      Counter: $(this).text()
+    }, {
+      duration: 3000,
+      easing: 'swing',
+      step: function (now) {
+        $(this).text(Math.round(now));
+      }
+    });
+  });
+  $('.count-dec').each(function () {
+    $(this).prop('Counter', 0).animate({
+      Counter: $(this).text()
+    }, {
+      duration: 3000,
+      easing: 'swing',
+      step: function (now) {
+        $(this).text(Math.round(now * 100) / 100);
+      }
+    });
+  });
 });

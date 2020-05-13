@@ -1,0 +1,32 @@
+#formations {
+  background: url('assets/img/section/bg-formation.svg');
+  background-position: center center !important;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat !important;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  > div {
+    background: url('assets/img/section/img-formation.svg');
+    background-position: center right !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    min-height: 440px;
+
+    > div {
+      @include media-breakpoint-up(lg) {
+        max-width: 60%;
+        padding: 100px;
+      }
+
+      h2,
+      p {
+        color: $white;
+      }
+
+      h2 {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
