@@ -44,7 +44,10 @@
 
     #metiers-carousel-content {
       width: 100%;
-      max-width: 1200px;
+      max-width: 1600px;
+      @include media-breakpoint-up(xl) {
+        
+      }
 
       .metiers-carousel-post {
         position: relative;
