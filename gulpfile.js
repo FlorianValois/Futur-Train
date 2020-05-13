@@ -25,6 +25,7 @@ gulp.task('script', function() {
       gulp.src([
         'node_modules/jquery/dist/jquery.js',
         'node_modules/bootstrap/dist/js/bootstrap.js',
+        'node_modules/owl.carousel/dist/owl.carousel.js',
         'assets/js/**/*.js'
       ]),
 	)
