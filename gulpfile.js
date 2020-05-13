@@ -26,6 +26,7 @@ gulp.task('script', function() {
         'node_modules/jquery/dist/jquery.js',
         'node_modules/bootstrap/dist/js/bootstrap.js',
         'node_modules/owl.carousel/dist/owl.carousel.js',
+        'node_modules/jquery-appear-original/index.js',
         'assets/js/**/*.js'
       ]),
 	)
