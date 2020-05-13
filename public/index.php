@@ -4,7 +4,8 @@
  
   <meta charset="utf-8">
   <title>Futur en train</title>
-  
+  <meta name="description" content="Découvrez Futur en train, le développement et la formation des métiers du ferroviaire" />
+  <meta name="robots" content="noindex, nofollow">
   <!-- Style and Scripts -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
